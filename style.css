@@ -1,0 +1,17 @@
+body {
+    background-color: rgb(240, 244, 233);
+    margin: 0;
+}
+
+.container-main {
+    border: coral solid;
+    height: 100vh;
+}
+
+.grid-element {
+    width: 15%;
+}
+
+img {
+    width: 100%;
+}
