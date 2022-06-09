@@ -7,16 +7,17 @@ body {
 }
 
 .container-main {
-    border: coral solid;
     width: 85%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
-    justify-content: center;
+    justify-content: space-between;
     justify-items: center;
+    gap: 3em;
 }
 
-.grid-element {
+.card-img {
+    cursor: pointer;
     width: 12vh;
     height: 80vh;
     transition: ease .8s;
@@ -31,7 +32,9 @@ img {
     object-position: center;
 }
 
-.grid-element:hover {
-    width: 50vh;
+.active {
+    width: 55vh;
 }
+
+
 
