@@ -1,6 +1,9 @@
 body {
     background-color: rgb(240, 244, 233);
     margin: 0;
+    height: 100vh;
+    display: flex;
+    align-items: center;
 }
 
 .container-main {
@@ -8,15 +11,27 @@ body {
     width: 85%;
     margin: 0 auto;
     display: grid;
-    grid-template-columns: repeat(5, 200px);
+    grid-template-columns: repeat(6, 1fr);
+    justify-content: center;
+    justify-items: center;
 }
 
 .grid-element {
-    width: 100px;
+    width: 12vh;
+    height: 80vh;
+    transition: ease .8s;
 }
 
 img {
+    border-radius: 1em;
     width: 100%;
+    height: 100%;
     display: block;
+    object-fit: cover;
+    object-position: center;
+}
+
+.grid-element:hover {
+    width: 50vh;
 }
 
