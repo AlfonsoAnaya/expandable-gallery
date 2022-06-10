@@ -7,7 +7,7 @@ body {
 }
 
 .container-main {
-    width: 85%;
+    width: 75%;
     margin: 0 auto;
     display: grid;
     grid-template-columns: repeat(6, 1fr);
@@ -20,7 +20,7 @@ body {
     cursor: pointer;
     width: 12vh;
     height: 80vh;
-    transition: ease .8s;
+    transition: ease .6s;
 }
 
 img {
