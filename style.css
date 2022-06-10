@@ -41,6 +41,7 @@ body {
 
 .active:hover span{
     visibility: visible;
+    transition: ease 1.2s;
 }
 
 img {
@@ -54,6 +55,11 @@ img {
 
 .active {
     width: 55vh;
+}
+
+a {
+    color: inherit;
+    text-decoration-style: dotted;
 }
 
 
