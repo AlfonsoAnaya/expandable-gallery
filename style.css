@@ -23,6 +23,14 @@ body {
     transition: ease .6s;
 }
 
+.card-img span{
+    visibility: hidden;
+}
+
+.active:hover span{
+    visibility: visible;
+}
+
 img {
     border-radius: 1em;
     width: 100%;

@@ -5,6 +5,7 @@ async function getImage(card) {
     let photoPromise = await fetch(url);
     let photo = await photoPromise.json();
     card.firstElementChild.src = await photo.urls.regular;
+    card.lastElementChild.textContent = await `Photo by ${photo.user.name}`;
 }
 
 for (let card of cards) {
