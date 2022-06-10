@@ -17,6 +17,7 @@ body {
 }
 
 .card-img {
+    position: relative;
     cursor: pointer;
     width: 12vh;
     height: 80vh;
@@ -24,7 +25,18 @@ body {
 }
 
 .card-img span{
+    font-family: Helvetica, sans-serif;
+    font-size: .8rem;
+    color:rgb(243, 238, 232, .9);
+    position: absolute;
+    bottom: 0;
+    left: 0;
     visibility: hidden;
+    padding: .65em 10px;
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+    background-color:rgb(53, 54, 51, .65);
+    width: calc(100% - 20px);
 }
 
 .active:hover span{
@@ -32,7 +44,7 @@ body {
 }
 
 img {
-    border-radius: 1em;
+    border-radius: 1rem;
     width: 100%;
     height: 100%;
     display: block;
