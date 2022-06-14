@@ -1,5 +1,5 @@
 body {
-    background-color: rgb(240, 244, 233);
+    background-color: rgb(247, 248, 237);
     margin: 0;
     height: 100vh;
     display: flex;
@@ -16,36 +16,39 @@ body {
     justify-content: space-between;
     justify-items: center;
     align-items: center;
-    gap: 1em;
-    border: solid coral;
+    gap: .75em;
 }
 
 .card-img {
     position: relative;
     cursor: pointer;
     width: 75%;
-    height: 10vh;
+    height: 9vh;
     transition: ease .6s;
 }
 
-.credits {
-    z-index: 1000;
-    font-family: Helvetica, sans-serif;
-    font-size: .8rem;
-    color:rgb(243, 238, 232);
+.container-credits {
     position: absolute;
     bottom: 0;
     left: 0;
-    opacity: 0;
+    width: 100%;
+    height: fit-content;
+}
+
+.credits {
+    font-family: Helvetica, sans-serif;
+    font-size: .8rem;
+    color:rgb(243, 238, 232);
+    visibility: hidden;
     padding: .65em 10px;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
     background-color:rgb(53, 54, 51, .65);
-    width: calc(100% - 20px);
+    display: block;
+    
 }
 
-.active .credits:hover {
-    opacity: 1;
+.active .container-credits:hover .credits {
     visibility: visible;
     transition: ease .3s;
 }
@@ -60,7 +63,7 @@ img {
 }
 
 .active {
-    height: 30vh;
+    height: 42vh;
 }
 
 a {
@@ -72,14 +75,9 @@ a {
     .container-main {
         width: 85%;
         height: 80vh;
-        margin: 0 auto;
-        display: grid;
         grid-template-columns: repeat(6, 1fr);
         grid-template-rows: 100%;
-        justify-content: space-between;
-        justify-items: center;
         gap: 3em;
-        border: solid coral;
     }
     .card-img {
         width: 12vh;
