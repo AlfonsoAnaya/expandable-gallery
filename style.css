@@ -28,13 +28,14 @@ body {
 }
 
 .credits {
+    z-index: 1000;
     font-family: Helvetica, sans-serif;
     font-size: .8rem;
-    color:rgb(243, 238, 232, .9);
+    color:rgb(243, 238, 232);
     position: absolute;
     bottom: 0;
     left: 0;
-    visibility: hidden;
+    opacity: 0;
     padding: .65em 10px;
     border-bottom-left-radius: 1rem;
     border-bottom-right-radius: 1rem;
@@ -42,9 +43,10 @@ body {
     width: calc(100% - 20px);
 }
 
-.active:hover .credits{
+.active .credits:hover {
+    opacity: 1;
     visibility: visible;
-    transition: ease 1.2s;
+    transition: ease .3s;
 }
 
 img {
