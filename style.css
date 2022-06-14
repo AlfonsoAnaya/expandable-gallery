@@ -37,8 +37,8 @@ body {
 
 .credits {
     font-family: Helvetica, sans-serif;
-    font-size: .8rem;
-    color:rgb(243, 238, 232);
+    font-size: .77rem;
+    color:rgb(243, 238, 232,.8);
     visibility: hidden;
     padding: .65em 10px;
     border-bottom-left-radius: 1rem;
