@@ -1,5 +1,5 @@
 let cards = document.querySelectorAll(".card-img");
-const url = "https://apis.scrimba.com/unsplash/photos/random/?orientation=portrait&query=sea"
+const url = "https://apis.scrimba.com/unsplash/photos/random/?orientation=portrait&query=ocean"
 
 async function getImage(card) {
     let photoPromise = await fetch(url);
