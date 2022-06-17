@@ -22,7 +22,7 @@ body {
 .card-img {
     position: relative;
     cursor: pointer;
-    width: 95%;
+    width: 85%;
     height: 8vh;
     transition: ease .6s;
 }
