@@ -23,7 +23,7 @@ body {
 .card-img {
     position: relative;
     cursor: pointer;
-    width: 85%;
+    width: 88%;
     height: 8vh;
     transition: ease .6s;
 }
@@ -64,7 +64,7 @@ img {
 }
 
 .active {
-    height: 36vh;
+    height: 39vh;
 }
 
 a {

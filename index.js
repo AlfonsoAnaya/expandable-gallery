@@ -2,9 +2,9 @@ let cards = document.querySelectorAll(".card-img");
 let url = "https://apis.scrimba.com/unsplash/photos/random/"
 
 if (window.innerWidth < 1301 ) {
-    url = `${url}?orientation=portrait&query=ocean`
-} else {
     url = `${url}?orientation=landscape&query=ocean`
+} else {
+    url = `${url}?orientation=portrait&query=ocean`
 }
 
 async function getImage(card) {
