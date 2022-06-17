@@ -7,8 +7,8 @@ body {
 }
 
 .container-main {
-    width: clamp(400px, 90%, 700px);
-    height: 95vh;
+    width: clamp(500px, 90%, 750px);
+    height: 85vh;
     margin: 0 auto;
     display: grid;
     grid-template-columns: 100%;
@@ -17,13 +17,14 @@ body {
     justify-items: center;
     align-items: center;
     gap: .75em;
+    border: solid coral 2px;
 }
 
 .card-img {
     position: relative;
     cursor: pointer;
-    width: 75%;
-    height: 9vh;
+    width: 85%;
+    height: 8vh;
     transition: ease .6s;
 }
 
@@ -63,7 +64,7 @@ img {
 }
 
 .active {
-    height: 42vh;
+    height: 36vh;
 }
 
 a {
