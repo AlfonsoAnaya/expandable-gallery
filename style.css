@@ -17,7 +17,6 @@ body {
     justify-items: center;
     align-items: center;
     gap: .75em;
-    border: solid coral 2px;
 }
 
 .card-img {
